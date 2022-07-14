@@ -1,5 +1,5 @@
 
-
+# Efficient approach would be to keep a distance array. where the value at each index represent the distance from 0th source. Update distance everytime you insert a value to quque as distance[i] = distance[u] + 1, where i is the node you are pushng to queue and u is the parent node. Return distance array. Ka-boom.
 class Solution:
     # @param A : Number of nodes
     # @param B : m*2 matrix where each row represents edge going from B[m][0] node to B[m][1]
