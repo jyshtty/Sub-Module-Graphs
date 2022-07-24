@@ -8,7 +8,6 @@ class Solution:
         for i in range(1, len(A)):
             adj_list[A[i]].append(i + 1 )
 
-
         visited = [0] * (len(A)+1)
 
         from collections import deque

@@ -7,7 +7,8 @@ class Solution:
     def dfs(self, adj_list, visited, source):
         if visited[source] == 1:
             return
-        visited[source] = 1
+
+        visited[source] = 1  # This has to be here. Make sure you put dont put in for loop because you need to iterate through the len of adj_list[source].
         for i in adj_list[source]:
             if not visited[i]:
                 self.dfs(adj_list, visited, i)

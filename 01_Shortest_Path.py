@@ -7,7 +7,7 @@ class Solution:
     # @param d : destination node
     # @return an integer shortest distance from s to d
     def solve(self, A, B, s, d):
-        adj_list = [[] for i in range(A+1)]
+        adj_list = [[] for i in range(A+1)] # adj_list should be of length of total number of nodes where each index represents nodes.
         for i in B:
             adj_list[i[0]].append(i[1])
             adj_list[i[1]].append(i[0])
