@@ -1,4 +1,5 @@
 # Find number of connected links
+# and if total edges = total nodes - connected components: Acyclic
 
 class Solution:
     # @param A : integer
