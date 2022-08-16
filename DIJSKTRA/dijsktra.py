@@ -33,7 +33,7 @@ class Solution:
                     v = graph[n][i]
                     node = v[0]
                     weight = v[1]
-                    if distance[node] > distance[n] + v[1]:
+                    if distance[n] + v[1] < distance[node]:
                         distance[node] = distance[n] + v[1]
                         heappush(q, [distance[node], node])
         for i in range(len(distance)):
