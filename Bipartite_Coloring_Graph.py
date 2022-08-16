@@ -19,7 +19,7 @@ class Solution:
                 for i in range(len(graph[u])):
                     v = graph[u][i]
                     if color[v] == 0:
-                        color[v] = 3 - color[u]
+                        color[v] = 3 - color[u] # all the edges you will color the opposite color. if color[u] = 2, color[v] = 1 lly if color[u] = 1, color [v] = 2. ytherefor color[v] = 3 - color[u]
                         q.append(v)
                     elif color[v] == color[u]:
                         return 0
