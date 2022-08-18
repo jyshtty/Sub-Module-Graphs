@@ -28,7 +28,7 @@ class Solution:
             d = u[0]
             n = u[1]
 
-            if d == distance[n]:
+            if d == distance[n]:          # will make the code faster
                 for i in range(len(graph[n])):
                     v = graph[n][i]
                     node = v[0]
