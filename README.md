@@ -3,6 +3,6 @@ Important Problems on Graphs
 
 **Graph Problems**
 1. *BFS*
-*Shortest path
+    * Shortest path
 2. *DFS*
-*Check if a path exists from source to destination
+     * Check if a path exists from source to destination
