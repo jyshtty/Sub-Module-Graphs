@@ -1,7 +1,7 @@
 # Sub-Module-Graphs
 Important Problems on Graphs
 
-** Graph Problems **
+**Graph Problems**
 1. *BFS*
 *Shortest path
 2. *DFS*
