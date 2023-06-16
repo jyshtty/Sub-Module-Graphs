@@ -26,10 +26,10 @@ class Solution:
                 self.dfs(adj_list, visited, i)
                 count = count + 1
 
-        e = len(B)
-        if e == A - count:
-            return 0, count
-        return 1
+        e = len(B) // total number of edges
+        if e == A - count: // if number of nodes - 1 == number of edges, then acyclic
+            return 0, count // acyclic
+        return 1    //  cyclic
 
 if __name__ == "__main__":
     A = 3
